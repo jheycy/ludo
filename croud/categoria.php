@@ -13,17 +13,10 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <title>LudoFashion - Categorias</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    
-   
-
 </head>
-
-
 <header>
     <h1>
         <p>
-
-
         <div>
             <a href="../views/index.html">LudoFashion </a>
             </p>
@@ -33,8 +26,6 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <input type="search" name="buscar" id="buscar" placeholder="Buscar...">
         <button type="submit" id="btn-buscar"><img src=" ../imgs/search_24dp_FILL0_wght400_GRAD0_opsz24.png " alt=""
                 width="30px"></button>
-
-
     </form>
     <p>
         <a href="../views/cadastro.html" class="icon-link">
@@ -47,10 +38,8 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <a href="../views/duvidas.html" class="icon-link">
             <img src="../imgs/help_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="" width="40px">
             Dúvidas
-
     </p>
     </a>
-
     <div class="menu">
         <div class="btn-fechar">
            <img src="../imgs/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24 (1).png" alt="" width="20px">
@@ -67,9 +56,6 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </header>
 
 <body>
-
-   
-    
     <nav>
 
         <a href="">Catalogo</a>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formu</title>
+</head>
+
+
+<!---como fazer um formulario-->
+<body>
+
+    <a href="">Sobre formulario </a>
+
+    <section>
+<!--NoME-->
+        <form action="" enctype="multipart/form-data">  <!------"enctype" necessario pra quando for enviar arquivo-->
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" value="Jheycy"
+            size="4" maxlength="4" placeholder="Seu nome" required>
+<!--senha-->
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" autofocus>
+<!--numero-->
+            <label for="num">Numero</label>
+            <input type="number" name="numero" id="num">
+<!--email-->
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="seuemail@gmail.com">
+<!--busca-->
+            <label for="busca">Busca</label>
+            <input type="search" name="busca" id="busca">
+
+<!---questionario-->
+            <fieldset> <!---- agrupar pedaços do meu questionario-->
+                <legend>Qual a sua linguagem favorita</legend>
+
+                <input type="radio" name="lang" id="html" value="html">
+                <label for="html">HTML</label>
+
+                <input type="radio" name="lang" id="css" value="css">
+                <label for="css">CSS</label>
+              </fieldset>
+<!----marcar mais de duas opcoes no questionario "facilita a leitura"-->
+              <fieldset>
+                <legend>Como voce chega no SENAC</legend>
+
+                <input type="checkbox" name="trasporte[]" id="pe" value="pe">
+                <label for="pe"> A pé</label>
+
+                <input type="checkbox" name="transport[]" id="onibus" value="onibus">
+                <label for="onibus">Onibus</label>
+              </fieldset>
+<!---cor-->
+              <label for="cor">Cor</label>
+              <input type="color" name="cor"  id="cor">
+<!---colocar data -->
+              <label for="data">Data</label>
+              <input type="date" name="data" id="data">
+<!---- inserir arquivo-->
+              <label for="foto">Foto de perfil</label>
+              <input type="file" name="foto" id="foto" accept="image/*"> <!----"accept" filtrar apenas o pedino nos arquivos-->
+
+              <input type="hidden" name="id" value="200">
+
+              <!----selecionar tamanho-->
+        <label for="tam">Selecione o tamanho da roupa</label>
+              <select name="tamanho-roupa" id="tam">
+                <option value="p">P</option>
+                <option value="m">M</option>
+                <option value="g" selected >G</option>
+              </select>
+
+              <textarea name="descrição" id="descrição" cols="10"
+              rows="10"></textarea>
+
+
+
+
+
+
+
+
+
+            <!---colocar enviar-->
+            <input type="submit" value="Enviar">
+
+        </form>
+    </section>
+</body>
+</html>
+
+<datalist></datalist> <!-----sobre nós-->
+class
+
+.classe-botao{
+  grid-column: 2
+     
+}
+
+
+<div>width 50%</div> <!----diminuir tamanho-->

@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
 $db = 'catalogo2';
-$user = 'root'; // Usuário padrão para instalações locais
-$pass = ''; // Sem senha
+$user = 'root'; 
+$pass = ''; 
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);

@@ -1,7 +1,6 @@
 <?php
 include 'config.php';
 
-// Ler categorias
 $stmt = $pdo->query("SELECT * FROM usuarios");
 $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -68,7 +67,7 @@ $usuarios = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <h1>Categoria</h1>
     </div>
     <div id="back">
-        <section class="sara">
+        <section class="php2">
             <?php foreach ($usuarios as $usuarios): ?>
                 <h1 id="margin">
                     <?php echo htmlspecialchars($usuarios['nome']); ?>

@@ -1,41 +1,4 @@
 
-<?php
-include 'conf.php'; // Ajuste o caminho conforme necessário
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Verificar se os campos do formulário estão definidos
-    if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['senha']) &&
-        isset($_POST['telefone']) && isset($_POST['cpf']) && isset($_POST['data_nascimento'])) {
-
-        // Receber dados do formulário
-        $nome = $_POST['name'];
-        $email = $_POST['email'];
-        $senha = password_hash($_POST['senha'], PASSWORD_DEFAULT); // Criptografar senha
-        $telefone = $_POST['telefone'];
-        $cpf = $_POST['cpf'];
-        $data_nascimento = $_POST['data_nascimento'];
-
-        // Inserir dados no banco de dados
-        try {
-            $stmt = $pdo->prepare("INSERT INTO usuarios (nome, email, senha, telefone, cpf, data_nascimento) VALUES (?, ?, ?, ?, ?, ?)");
-            $stmt->execute([$nome, $email, $senha, $telefone, $cpf, $data_nascimento]);
-            echo "Cadastro realizado com sucesso!";
-        } catch (PDOException $e) {
-            // Mensagem de erro
-            echo "Erro ao cadastrar: " . $e->getMessage();
-        }
-    } else {
-        echo "Todos os campos são obrigatórios.";
-    }
-}
-?>
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="pr-BR">
 

@@ -36,7 +36,7 @@
 
     <p>
         </a>
-        <a href="../views/duvidas.html" class="icon-link">
+        <a href="../views/duvidas.php" class="icon-link">
             <img src="../imgs/help_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="" width="40px">
             Dúvidas
 
@@ -65,7 +65,7 @@
     <nav>
 
         <a href="">Catalogo</a>
-        <a href="../views/sobre.html"> Sobre nós</a>
+        <a href="../"> Sobre nós</a>
 
     </nav>
     <main>

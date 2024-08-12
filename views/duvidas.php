@@ -7,6 +7,7 @@
     <title>LudoFashion</title>
     <link rel="stylesheet" href="../css/style.css">
 
+
 </head>
 
 
@@ -36,26 +37,38 @@
     <p>
         </a>
         <a href="../views/duvidas.html" class="icon-link">
-            <img src="../imgs/" alt="" width="40px">
+            <img src="../imgs/help_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="" width="40px">
             Dúvidas
 
     </p>
     </a>
+
+    <div class="menu">
+        <div class="btn-fechar">
+           <img src="../imgs/close_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24 (1).png" alt="" width="20px">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">Cadastre-se</a></li>
+                <li><a href="#">Duvidas</a></li>
+            </ul>
+        <div>
+    
+    </div>
 
 </header>
 
 <body>
 
    
-          
+    
     <nav>
 
         <a href="">Catalogo</a>
         <a href="../views/sobre.html"> Sobre nós</a>
 
     </nav>
-    
-    
+    <main>
 
 
     <!----DUVIDAS-->
@@ -107,11 +120,11 @@
                     </div>
 
 
-                            <div class="img">
-                                    <img src="../imgs/Design_sem_nome__1_-removebg-preview.png" alt="" width="350px">
+                            <div class="img2">
+                                    <img src="../imgs/Design_sem_nome__1_-removebg-preview.png" alt="" width="550px">
 
                                     <p class="titulo2">Ainda com problema?</p>
-                                    <button class="btn-fale">Fale Conosco<img class="bnt-fale"src= "../i"alt="" height="40px"></button>
+                                    <button class="btn-falee">Fale Conosco<img class="bnt-falee"src= "../i"alt="" height="40px"></button>
                             </div>
                             </section>
                         </body>

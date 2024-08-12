@@ -15,8 +15,8 @@ if (!$usuarios) {
     die('Categoria não encontrada.');
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     
     $stmt = $pdo->prepare("UPDATE usuarios SET nome = :nome WHERE id = :id");
     $stmt->execute(['nome' => $nome, 'id' => $id]);

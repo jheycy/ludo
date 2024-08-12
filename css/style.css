@@ -294,7 +294,7 @@ nav a:first-child {
 
 }
 
-.image-container img {
+.image-container img2 {
 
     max-width: 100%;
     height: auto;
@@ -324,7 +324,7 @@ nav a:first-child {
 
 }
 
-.btn-fale {
+.btn-falee {
     background-color: var(--cor-primaria);
     color: var(--BRANCO);
     border-radius: 50px;
@@ -441,77 +441,159 @@ font-family: Arial, Helvetica, sans-serif;
 /* meu perfil*/
 
 
-/*chat*/
 
-.container3 {
+:root {
+    --cor-primaria: #f464c3;
+    --cor-secundaria: #3d1c31;
+    --cor-tres: #FDACE0;
+    --branco: white;
+    --preto: black;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--cor-primaria);
     display: flex;
-    gap: 20px; /* Espaçamento entre o card e a coluna */
-    position: relative; /* Torna o contêiner relativo para poder usar `right` */
-    right: 29px; /* Alinha o contêiner à direita */
+    padding: 1rem;
+    align-items: center;
 }
 
-.card2 {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex-direction: column-reverse;
+#form-buscar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.column {
+#buscar {
+    flex-grow: 0.75;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.icon-link {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Espaçamento entre as palavras */
-    max-width: 200px;
+    align-items: center;
+    margin: 0.5rem;
 }
 
-.column p {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 10px;
-    margin: 0;
+#btn-buscar {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 11%;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-
-.categoria2{
-    color: rgb(0, 0, 0);
+nav {
     display: grid;
-    margin: 9px;
-    font-size: smaller;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    background-color: var(--cor-tres);
+    padding: 0.5rem;
+}
 
-    
+nav a:first-child {
+    border-right: 1px solid var(--preto);
+}
+
+.ludo {
+    text-decoration: none;
+    font-size: x-large;
+    color: white;
+}
+
+.categoria h1 {
+    color: rgb(0, 0, 0);
+    margin: 9px;
 
 }
-.meu{
+
+.meu h1 {
     display: grid;
     text-align: center;
     margin-top: 5%;
     margin-right: 20%;
-}
-.meu h1{
     color: black;
+    
 }
+
 .meu p{
+    display: grid;
+    text-align: center;
+    margin-top: 5%;
+    margin-right: 20%;
     color: black;
 }
-#dois{
+
+#dois {
     position: relative;
     margin-right: 0.5%;
     top: 6px;
+}
+
+.color {
+    background-color: var(--cor-tres);
+    grid-template-columns: max-content;
+    margin-left: 15%;
+    height: 600px;
+    width: 900px;
+}
+
+.lumo {
+    display: flex;
+    grid-template-columns: repeat(2, 2fr);
+    margin:0.5%;
+    border: 10%;
+}
+.usuario{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+ margin-bottom: auto;
+}
+/* Adicione ao seu CSS existente */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
     color: black;
 }
-.categoria2 h1{
+.usuario{
     color: black;
 }
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
 
 
 /*categoria*/

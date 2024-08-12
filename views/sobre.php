@@ -49,7 +49,7 @@
     <nav>
 
         <a href="">Catalogo</a>
-        <a href=""> Sobre nós </a>
+        <a href="../views/sobre.php"> Sobre nós </a>
 
     </nav>
     <main>
